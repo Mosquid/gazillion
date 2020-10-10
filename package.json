@@ -1,0 +1,16 @@
+{
+  "name": "gazillion",
+  "version": "1.0.0",
+  "description": "an online sanctuary of the world's highest z-index",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "mosquid",
+  "license": "ISC",
+  "dependencies": {
+    "event-stream": "^4.0.1",
+    "puppeteer": "^5.3.1",
+    "request": "^2.88.2"
+  }
+}
