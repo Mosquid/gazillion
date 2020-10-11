@@ -1,4 +1,6 @@
 const puppeteer = require("puppeteer")
+let browser
+let page
 
 function sanitizeData(data) {
   const output = []
@@ -31,8 +33,9 @@ function compareNodes(a, b) {
 
 async function analyzeWebsite(siteUrl) {
   try {
-    const browser = await puppeteer.launch()
-    const page = await browser.newPage()
+    if (!browser) browser = await puppeteer.launch()
+
+    page = await browser.newPage()
     await page.goto(siteUrl, { waitUntil: "networkidle2" })
 
     const data = await page.evaluate(analysePage)
@@ -40,10 +43,12 @@ async function analyzeWebsite(siteUrl) {
     const sorted = sanitized.sort(compareNodes)
 
     await page.close()
-    await browser.close()
+
     return sorted[0]
   } catch (error) {
+    page && await page.close()
     console.log(error)
+
     return false
   }
 }
