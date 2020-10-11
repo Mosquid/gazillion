@@ -10,3 +10,11 @@ We came up with a unique formula that enabled us to roughly estimate the "height
 # For contributors
 
 Help yourself and PR.
+
+# Contributors ✨
+
+<a href="https://github.com/mosquid/gazillion/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=mosquid/gazillion" />
+</a>
+
+Made with [contributors-img](https://contributors-img.web.app).
