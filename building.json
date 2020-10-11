@@ -1,14 +1,402 @@
 [
-  {
-    "name": "Burj Khalifa",
-    "height": 828
-  },
-  {
-    "name": "Shanghai Tower",
-    "height": 632
-  },
-  {
-    "name": "Abraj Al-Bait Clock Tower",
-    "height": 601
-  }
+    {
+        "name": "Burj Khalifa",
+        "height": 828
+    },
+    {
+        "name": "Shanghai Tower",
+        "height": 632
+    },
+    {
+        "name": "Abraj Al-Bait Clock Tower",
+        "height": 601
+    },
+    {
+        "Building Name": "Ping An Finance Center",
+        "Height (m)": "599.1"
+    },
+    {
+        "Building Name": "Lotte World Tower",
+        "Height (m)": "554.5"
+    },
+    {
+        "Building Name": "One World Trade Center",
+        "Height (m)": "541.3"
+    },
+    {
+        "Building Name": "Guangzhou CTF Finance Centre",
+        "Height (m)": "530"
+    },
+    {
+        "Building Name": "Tianjin CTF Finance Centre",
+        "Height (m)": "530"
+    },
+    {
+        "Building Name": "CITIC Tower",
+        "Height (m)": "527.7"
+    },
+    {
+        "Building Name": "TAIPEI 101",
+        "Height (m)": "508"
+    },
+    {
+        "Building Name": "Shanghai World Financial Center",
+        "Height (m)": "492"
+    },
+    {
+        "Building Name": "International Commerce Centre",
+        "Height (m)": "484"
+    },
+    {
+        "Building Name": "Lakhta Center",
+        "Height (m)": "462"
+    },
+    {
+        "Building Name": "Vincom Landmark 81",
+        "Height (m)": "461.2"
+    },
+    {
+        "Building Name": "Changsha IFS Tower T1",
+        "Height (m)": "452.1"
+    },
+    {
+        "Building Name": "Petronas Twin Tower 1",
+        "Height (m)": "451.9"
+    },
+    {
+        "Building Name": "Petronas Twin Tower 2",
+        "Height (m)": "451.9"
+    },
+    {
+        "Building Name": "Suzhou IFS",
+        "Height (m)": "450"
+    },
+    {
+        "Building Name": "Zifeng Tower",
+        "Height (m)": "450"
+    },
+    {
+        "Building Name": "The Exchange 106",
+        "Height (m)": "445.5"
+    },
+    {
+        "Building Name": "Willis Tower",
+        "Height (m)": "442.1"
+    },
+    {
+        "Building Name": "KK100",
+        "Height (m)": "441.8"
+    },
+    {
+        "Building Name": "Guangzhou International Finance Center",
+        "Height (m)": "438.6"
+    },
+    {
+        "Building Name": "Wuhan Center Tower",
+        "Height (m)": "438"
+    },
+    {
+        "Building Name": "One Vanderbilt",
+        "Height (m)": "427"
+    },
+    {
+        "Building Name": "432 Park Avenue",
+        "Height (m)": "425.7"
+    },
+    {
+        "Building Name": "Marina 101",
+        "Height (m)": "425"
+    },
+    {
+        "Building Name": "Trump International Hotel & Tower",
+        "Height (m)": "423.2"
+    },
+    {
+        "Building Name": "Jin Mao Tower",
+        "Height (m)": "420.5"
+    },
+    {
+        "Building Name": "Princess Tower",
+        "Height (m)": "413.4"
+    },
+    {
+        "Building Name": "Al Hamra Tower",
+        "Height (m)": "412.6"
+    },
+    {
+        "Building Name": "Two International Finance Centre",
+        "Height (m)": "412"
+    },
+    {
+        "Building Name": "LCT The Sharp Landmark Tower",
+        "Height (m)": "411.6"
+    },
+    {
+        "Building Name": "Guiyang International Financial Center T1",
+        "Height (m)": "401"
+    },
+    {
+        "Building Name": "China Resources Tower",
+        "Height (m)": "392.5"
+    },
+    {
+        "Building Name": "23 Marina",
+        "Height (m)": "392.4"
+    },
+    {
+        "Building Name": "CITIC Plaza",
+        "Height (m)": "390.2"
+    },
+    {
+        "Building Name": "30 Hudson Yards",
+        "Height (m)": "387.1"
+    },
+    {
+        "Building Name": "Shun Hing Square",
+        "Height (m)": "384"
+    },
+    {
+        "Building Name": "Eton Place Dalian Tower 1",
+        "Height (m)": "383.2"
+    },
+    {
+        "Building Name": "Nanning Logan Century 1",
+        "Height (m)": "381.3"
+    },
+    {
+        "Building Name": "Burj Mohammed Bin Rashid",
+        "Height (m)": "381.2"
+    },
+    {
+        "Building Name": "Empire State Building",
+        "Height (m)": "381"
+    },
+    {
+        "Building Name": "Elite Residence",
+        "Height (m)": "380.5"
+    },
+    {
+        "Building Name": "Central Plaza",
+        "Height (m)": "373.9"
+    },
+    {
+        "Building Name": "Federation Tower",
+        "Height (m)": "373.7"
+    },
+    {
+        "Building Name": "Dalian International Trade Center",
+        "Height (m)": "370.2"
+    },
+    {
+        "Building Name": "The Address Boulevard",
+        "Height (m)": "370"
+    },
+    {
+        "Building Name": "Golden Eagle Tiandi Tower A",
+        "Height (m)": "368.1"
+    },
+    {
+        "Building Name": "Bank of China Tower",
+        "Height (m)": "367.4"
+    },
+    {
+        "Building Name": "Bank of America Tower",
+        "Height (m)": "365.8"
+    },
+    {
+        "Building Name": "Almas Tower",
+        "Height (m)": "360"
+    },
+    {
+        "Building Name": "Hanking Center",
+        "Height (m)": "358.9"
+    },
+    {
+        "Building Name": "Gevora Hotel",
+        "Height (m)": "356.3"
+    },
+    {
+        "Building Name": "JW Marriott Marquis Hotel Dubai Tower 1",
+        "Height (m)": "355.4"
+    },
+    {
+        "Building Name": "JW Marriott Marquis Hotel Dubai Tower 2",
+        "Height (m)": "355.4"
+    },
+    {
+        "Building Name": "Emirates Tower One",
+        "Height (m)": "354.6"
+    },
+    {
+        "Building Name": "Raffles City Chongqing T3N",
+        "Height (m)": "354.5"
+    },
+    {
+        "Building Name": "Raffles City Chongqing T4N",
+        "Height (m)": "354.5"
+    },
+    {
+        "Building Name": "OKO - Residential Tower",
+        "Height (m)": "354.2"
+    },
+    {
+        "Building Name": "The Torch",
+        "Height (m)": "352"
+    },
+    {
+        "Building Name": "Forum 66 Tower 1",
+        "Height (m)": "350.6"
+    },
+    {
+        "Building Name": "The Pinnacle",
+        "Height (m)": "350.3"
+    },
+    {
+        "Building Name": "Spring City 66",
+        "Height (m)": "349"
+    },
+    {
+        "Building Name": "85 Sky Tower",
+        "Height (m)": "347.5"
+    },
+    {
+        "Building Name": "Shimao Hunan Center",
+        "Height (m)": "347"
+    },
+    {
+        "Building Name": "Aon Center",
+        "Height (m)": "346.3"
+    },
+    {
+        "Building Name": "The Center",
+        "Height (m)": "346"
+    },
+    {
+        "Building Name": "NEVA TOWERS 2",
+        "Height (m)": "345"
+    },
+    {
+        "Building Name": "875 North Michigan Avenue",
+        "Height (m)": "343.7"
+    },
+    {
+        "Building Name": "Four Seasons Place",
+        "Height (m)": "342.5"
+    },
+    {
+        "Building Name": "ADNOC Headquarters",
+        "Height (m)": "342"
+    },
+    {
+        "Building Name": "One Shenzhen Bay Tower 7",
+        "Height (m)": "341.4"
+    },
+    {
+        "Building Name": "LCT The Sharp Residential Tower A",
+        "Height (m)": "339.1"
+    },
+    {
+        "Building Name": "Comcast Technology Center",
+        "Height (m)": "339.1"
+    },
+    {
+        "Building Name": "Wuxi International Finance Square",
+        "Height (m)": "339"
+    },
+    {
+        "Building Name": "Heartland 66 Office Tower",
+        "Height (m)": "339"
+    },
+    {
+        "Building Name": "Chongqing World Financial Center",
+        "Height (m)": "338.9"
+    },
+    {
+        "Building Name": "Mercury City Tower",
+        "Height (m)": "338.8"
+    },
+    {
+        "Building Name": "Suning Plaza Tower 1",
+        "Height (m)": "338"
+    },
+    {
+        "Building Name": "Tianjin Modern City Office Tower",
+        "Height (m)": "338"
+    },
+    {
+        "Building Name": "Parc1 Tower A",
+        "Height (m)": "338"
+    },
+    {
+        "Building Name": "Tianjin World Financial Center",
+        "Height (m)": "336.9"
+    },
+    {
+        "Building Name": "Hengqin International Finance Center",
+        "Height (m)": "336.7"
+    },
+    {
+        "Building Name": "Wilshire Grand Center",
+        "Height (m)": "335.3"
+    },
+    {
+        "Building Name": "DAMAC Heights",
+        "Height (m)": "335.1"
+    },
+    {
+        "Building Name": "Twin Towers Guiyang, East Tower",
+        "Height (m)": "335"
+    },
+    {
+        "Building Name": "Twin Towers Guiyang, West Tower",
+        "Height (m)": "335"
+    },
+    {
+        "Building Name": "Shimao International Plaza",
+        "Height (m)": "333.3"
+    },
+    {
+        "Building Name": "LCT The Sharp Residential Tower B",
+        "Height (m)": "333.1"
+    },
+    {
+        "Building Name": "Rose Rayhaan by Rotana",
+        "Height (m)": "333"
+    },
+    {
+        "Building Name": "The Address Residence - Fountain Views III",
+        "Height (m)": "331.8"
+    },
+    {
+        "Building Name": "Minsheng Bank Building",
+        "Height (m)": "331"
+    },
+    {
+        "Building Name": "China World Tower",
+        "Height (m)": "330"
+    },
+    {
+        "Building Name": "Shimao Qianhai Project Tower 1",
+        "Height (m)": "330"
+    },
+    {
+        "Building Name": "Yuexiu Fortune Center Tower 1",
+        "Height (m)": "330"
+    },
+    {
+        "Building Name": "Hon Kwok City Center",
+        "Height (m)": "329.4"
+    },
+    {
+        "Building Name": "3 World Trade Center",
+        "Height (m)": "328.9"
+    },
+    {
+        "Building Name": "Zhuhai Tower",
+        "Height (m)": "328.8"
+    },
+    {
+        "Building Name": "Keangnam Hanoi Landmark Tower",
+        "Height (m)": "328.6"
+    }
 ]
