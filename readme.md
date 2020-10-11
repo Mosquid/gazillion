@@ -13,4 +13,8 @@ Help yourself and PR.
 
 # Contributors ✨
 
-@saptarsi96
+<a href="https://github.com/mosquid/gazillion/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=mosquid/gazillion" />
+</a>
+
+Made with [contributors-img](https://contributors-img.web.app).
