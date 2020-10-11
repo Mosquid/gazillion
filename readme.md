@@ -10,3 +10,7 @@ We came up with a unique formula that enabled us to roughly estimate the "height
 # For contributors
 
 Help yourself and PR.
+
+# Contributors ✨
+
+@saptarsi96
