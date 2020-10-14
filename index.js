@@ -28,7 +28,7 @@ const stream = fs
         analyzeWebsite(`https://${domain}`)
           .then((data) => {
             domains[domain] = data
-            console.log(domain, data)
+            console.log(ln, domain, data)
             stream.resume()
 
             if (ln > process.env.SITE_LIMIT) stream.end()
@@ -40,7 +40,10 @@ const stream = fs
       .on("error", console.error)
       .on("end", () => {
         console.log("Read entire file.")
-        process.exit(0)
+
+        fs.writeFile("output.json", JSON.stringify(domains), (err) => {
+          process.exit(0)
+        })
       })
   )
 
