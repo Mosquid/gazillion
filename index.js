@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const fs = require("fs")
 const es = require("event-stream")
 const { analyzeWebsite } = require("./site-utils")
@@ -13,7 +15,6 @@ const stream = fs
   .pipe(
     es
       .mapSync((line) => {
-        // pause the readstream
         stream.pause()
 
         const domain = line.split(",")[2]
@@ -30,7 +31,7 @@ const stream = fs
             console.log(domain, data)
             stream.resume()
 
-            if (ln > 1000) stream.end()
+            if (ln > process.env.SITE_LIMIT) stream.end()
           })
           .catch(() => {
             stream.resume()
@@ -38,11 +39,12 @@ const stream = fs
       })
       .on("error", console.error)
       .on("end", () => {
-        console.log(domains)
         console.log("Read entire file.")
+        process.exit(0)
       })
   )
 
 stream.on("finish", () => {
   console.log("domains")
+  process.exit()
 })

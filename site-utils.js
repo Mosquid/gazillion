@@ -1,6 +1,20 @@
 const puppeteer = require("puppeteer")
+
 let browser
 let page
+let launchParams = {}
+
+if (process.env.PI_MODE) {
+  launchParams.args = [
+    "--no-sandbox",
+    "--disable-setuid-sandbox",
+    "--ignore-certificate-errors",
+  ]
+}
+
+if (process.env.EXEC_PATH) {
+  launchParams.executablePath = process.env.EXEC_PATH
+}
 
 function sanitizeData(data) {
   const output = []
@@ -33,10 +47,10 @@ function compareNodes(a, b) {
 
 async function analyzeWebsite(siteUrl) {
   try {
-    if (!browser) browser = await puppeteer.launch()
+    if (!browser) browser = await puppeteer.launch(launchParams)
 
     page = await browser.newPage()
-    await page.goto(siteUrl, { waitUntil: "networkidle2" })
+    await page.goto(siteUrl, { waitUntil: "load", timeout: 0 })
 
     const data = await page.evaluate(analysePage)
     const sanitized = sanitizeData(data)
@@ -46,8 +60,8 @@ async function analyzeWebsite(siteUrl) {
 
     return sorted[0]
   } catch (error) {
-    page && await page.close()
-    console.log(error)
+    page && (await page.close())
+    console.error(error)
 
     return false
   }
