@@ -54,17 +54,26 @@ async function analyzeWebsite(siteUrl) {
       cycles = 0
       browser = null
 
-      await browser.close();
+      await browser.close()
     }
 
     if (!browser) {
-      console.log('launching a browser')
+      console.log("launching a browser")
       browser = await puppeteer.launch(launchParams)
     }
 
     page = await browser.newPage()
-    await page.goto(siteUrl, { waitUntil: "networkidle0", timeout: 35000 })
+    await page.setRequestInterception(true)
 
+    page.on("request", (request) => {
+      if (["image", "font"].indexOf(request.resourceType()) !== -1) {
+        request.abort()
+      } else {
+        request.continue()
+      }
+    })
+
+    await page.goto(siteUrl, { waitUntil: "networkidle0", timeout: 35000 })
     const data = await page.evaluate(analysePage)
     const sanitized = sanitizeData(data)
     const sorted = sanitized.sort(compareNodes)
