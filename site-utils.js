@@ -52,9 +52,9 @@ async function analyzeWebsite(siteUrl) {
 
     if (cycles > 10) {
       cycles = 0
-      browser = null
-
       await browser.close()
+
+      browser = null
     }
 
     if (!browser) {
