@@ -29,15 +29,19 @@ const stream = fs
           .then((data) => {
             domains[domain] = data
             console.log(ln, domain, data)
+          })
+          .catch((err) => {
+            console.error(err)
+          })
+          .finally(() => {
             stream.resume()
-
             if (ln > process.env.SITE_LIMIT) stream.end()
           })
-          .catch(() => {
-            stream.resume()
-          })
       })
-      .on("error", console.error)
+      .on("error", (err) => {
+        console.error(err)
+        stream.resume()
+      })
       .on("end", () => {
         console.log("Read entire file.")
 

@@ -52,8 +52,9 @@ async function analyzeWebsite(siteUrl) {
 
     if (cycles > 10) {
       cycles = 0
-      await browser.close();
       browser = null
+
+      await browser.close();
     }
 
     if (!browser) {
@@ -73,6 +74,7 @@ async function analyzeWebsite(siteUrl) {
     return sorted[0]
   } catch (error) {
     page && (await page.close())
+
     console.error(error)
 
     return false
