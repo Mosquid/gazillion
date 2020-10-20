@@ -3,6 +3,7 @@ const puppeteer = require("puppeteer")
 let browser
 let page
 let launchParams = {}
+let cycles = 0
 
 if (process.env.PI_MODE) {
   launchParams.args = [
@@ -47,10 +48,21 @@ function compareNodes(a, b) {
 
 async function analyzeWebsite(siteUrl) {
   try {
-    if (!browser) browser = await puppeteer.launch(launchParams)
+    cycles++
+
+    if (cycles > 10) {
+      cycles = 0
+      await browser.close();
+      browser = null
+    }
+
+    if (!browser) {
+      console.log('launching a browser')
+      browser = await puppeteer.launch(launchParams)
+    }
 
     page = await browser.newPage()
-    await page.goto(siteUrl, { waitUntil: "load", timeout: 0 })
+    await page.goto(siteUrl, { waitUntil: "networkidle0", timeout: 35000 })
 
     const data = await page.evaluate(analysePage)
     const sanitized = sanitizeData(data)
