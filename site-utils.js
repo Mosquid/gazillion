@@ -46,6 +46,35 @@ function compareNodes(a, b) {
   return b[1] - a[1]
 }
 
+async function analyzeStyleSheets() {
+  let topIndex = {
+    selector: null,
+    value: 0,
+  }
+  const sheets = document.styleSheets
+
+  for (let sheet of sheets) {
+    try {
+      const rules = sheet.cssRules
+      for (let rule of rules) {
+        if (!rule.cssText.includes("z-index")) continue
+        const zIndex = parseInt(rule.style.zIndex)
+        if (isNaN(zIndex)) continue
+        const { selectorText } = rule
+        console.log(zIndex)
+        if (topIndex.value < zIndex) {
+          topIndex.selector = selectorText
+          topIndex.value = zIndex
+        }
+      }
+    } catch (error) {
+      continue
+    }
+  }
+
+  return topIndex
+}
+
 async function analyzeWebsite(siteUrl) {
   try {
     cycles++
@@ -74,11 +103,12 @@ async function analyzeWebsite(siteUrl) {
     })
 
     await page.goto(siteUrl, { waitUntil: "networkidle0", timeout: 35000 })
-    const data = await page.evaluate(analysePage)
+    const data = await page.evaluate(analyzeStyleSheets)
+    await page.close()
+    return data
     const sanitized = sanitizeData(data)
     const sorted = sanitized.sort(compareNodes)
 
-    await page.close()
 
     return sorted[0]
   } catch (error) {

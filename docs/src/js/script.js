@@ -32,7 +32,7 @@ function renderDataRow(siteData) {
   cols[1].innerText = siteData[1]
   cols[2].innerText = `${Math.round(siteData[1] / 536871)}m`
 
-  document.querySelector('#chart-data').appendChild(row)
+  document.querySelector("#chart-data").appendChild(row)
 }
 
 function sortData(a, b) {
