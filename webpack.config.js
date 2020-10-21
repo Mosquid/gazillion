@@ -2,14 +2,14 @@ const path = require("path")
 const fs = require("fs")
 
 module.exports = {
-  entry: "./website/src/index.js",
+  entry: "./docs/src/index.js",
   output: {
-    path: path.resolve(__dirname, "./website/dist"),
+    path: path.resolve(__dirname, "./docs/dist"),
     filename: "bundle.js",
   },
   devServer: {
     port: 9000,
-    contentBase: path.resolve(__dirname, "./website"),
+    contentBase: path.resolve(__dirname, "./docs"),
   },
   module: {
     rules: [

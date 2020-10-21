@@ -6,8 +6,18 @@
     <title>gaZillion - In the search for the world tallest website</title>
     <script src="./dist/bundle.js"></script>
   </head>
+
+  <script id="data-row" type="text/template">
+    <div class="site-row row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+  </script>
+
   <body>
     <section id="primary">
+      <h1>Top 1000 world most visited websites</h1>
       <div id="chart">
         <div id="chart-headers" class="row">
           <div class="th col sitename">Site</div>
@@ -15,28 +25,7 @@
           <div class="th col height">Height *</div>
         </div>
 
-        <div id="chart-data">
-          <div class="site-row row">
-            <div class="col">facebook.com</div>
-            <div class="col">100</div>
-            <div class="col">5</div>
-          </div>
-          <div class="site-row row">
-            <div class="col">google.com</div>
-            <div class="col">100</div>
-            <div class="col">5</div>
-          </div>
-          <div class="site-row row">
-            <div class="col">youtube.com</div>
-            <div class="col">100</div>
-            <div class="col">5</div>
-          </div>
-          <div class="site-row row">
-            <div class="col">instagram.com</div>
-            <div class="col">100</div>
-            <div class="col">5</div>
-          </div>
-        </div>
+        <div id="chart-data"></div>
       </div>
     </section>
   </body>
