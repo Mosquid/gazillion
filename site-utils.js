@@ -102,7 +102,7 @@ async function analyzeWebsite(siteUrl) {
       }
     })
 
-    await page.goto(siteUrl, { waitUntil: "networkidle0", timeout: 35000 })
+    await page.goto(siteUrl, { waitUntil: "domcontentloaded", timeout: 35000 })
     const data = await page.evaluate(analyzeStyleSheets)
     await page.close()
     return data
