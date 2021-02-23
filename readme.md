@@ -16,4 +16,4 @@ Help yourself and PR.
   <img src="https://contributors-img.web.app/image?repo=mosquid/gazillion" />
 </a>
 
-Made with [contributors-img](https://contributors-img.web.app).
+Made with [contributors-img](https://contributors-img.web.app)
